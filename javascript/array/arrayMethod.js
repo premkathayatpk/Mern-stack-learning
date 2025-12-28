@@ -50,7 +50,7 @@ const aArr = arr6.filter((item) => {
 console.log(aArr);
 
 // 7. Filter an array of numbers to return only those greater than 5. 
-let arr7 = [1, 2, 3, 4, 5,,6,7, 10, 20];
+let arr7 = [1, 2, 3, 4, 5,6,7, 10, 20];
 
 const grater5= arr7.filter((item) => {
   return item>5
@@ -64,4 +64,64 @@ console.log(grater5);
 
 
 // 9. Write a function that maps an array of numbers to an array where each number is doubled. 
+let arr9 = [1, 2, 3, 4, 5]
+let doubleNum=arr9.map((item)=>{
+  return item*2
+})
+console.log(doubleNum)
 
+// 10. Convert an array of numbers into an array of strings using `map`. 
+let numArr = [1, 2, 3, 4, 5]
+
+let stringArr= numArr.toString(numArr)
+console.log(stringArr)
+
+
+// 11. Write a function that converts an array of strings to uppercase using `map`. 
+let arr11=["abc","ram",'xyz']
+let upperArr=arr11.map((item)=>{
+  return item.toUpperCase()
+})
+console.log(upperArr)
+
+// 12. Given an array of numbers, map it to an array of `true` (if the number is positive) or `false` (if the number is negative). 
+let arr12=[1,2,3,-3,-5,5,-1]
+let posNegArr=arr12.map((item)=>{
+  if(item>=0){
+    return "true"
+  }
+  else{
+    return "false"
+  }
+})
+console.log(posNegArr)
+
+// 13. Write a function that adds 1 to each number in an array using `map`. 
+let arr13 = [1, 2, 3, 4, 5]
+let add1=arr9.map((item)=>{
+  return item+1
+})
+console.log(add1)
+
+
+// 14. Given an array of strings, return an array of the first letter of each string using `map`. 
+let arr14=["abc","ram",'xyz']
+let firstLetter=arr14.map((item)=>{
+  return item[0]
+})
+console.log(firstLetter)
+
+
+// 15. Convert an array of strings to an array of their lengths using `map`. 
+let arr15=["ab","c",'xyz']
+let lengthOfArr=arr15.map((item)=>{
+  return item.length
+})
+console.log(lengthOfArr)
+
+// 16. Write a function that squares each number in an array using `map`. 
+let  arr16= [1, 2, 3, 4, 5]
+let sqrOfNum=arr9.map((item)=>{
+  return item**2
+})
+console.log(sqrOfNum)
