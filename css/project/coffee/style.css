@@ -121,3 +121,62 @@ list-style: none;
   font-size: 18px;
   line-height: 1.5;
 }
+
+/* ------Menu section------- */
+.menu{
+  background-color: rgb(189, 74, 74);
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+
+.items{
+    /* border: 2px solid black; */
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  padding-top: 20px;
+}
+
+.item{
+  /* border: 2px solid black; */
+  /* height: 300px; */
+  width: 400px;
+  padding: 15px;
+  color: white;
+}
+
+.item img{
+  height: 120px;
+
+}
+.item-text p{
+  padding-top:15px;
+}
+
+.gallery{
+   padding: 30px;
+  text-align: center;
+}
+
+.gallery .photo{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  padding: 20px;
+}
+
+.photo .ph{
+  /* border: 1px solid black; */
+  width: 400px;
+  
+}
+
+.photo img{
+  height: 180px;
+  width: 180px;
+}
