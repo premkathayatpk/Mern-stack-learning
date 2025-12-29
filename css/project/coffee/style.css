@@ -24,3 +24,100 @@ header{
   /* border: 2px solid white; */
   height: 40px;
 }
+
+.navigation ul{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.navigation li{
+list-style: none;
+}
+
+.navigation a{
+  text-decoration: none;
+  color: white;
+}
+
+/* --------hero section--------- */
+
+.hero{
+   background-color: rgb(175, 59, 59);
+   padding: 20px 50px 20px 20px;
+  height: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-text{
+  /* border: 2px solid black; */
+  width: 290px;
+  margin: 15px 40px;
+  padding: 10px;
+
+}
+.hero-text h1{
+  color: orange;
+}
+
+.hero-text #t1{
+
+    /* border: 2px solid black; */
+    padding-top: 15px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.hero-text #t2{
+  padding-top: 15px;
+    /* border: 2px solid black; */
+    color: white;
+    font-size: 15px;
+}
+.hero-text .btn{
+    padding-top: 15px;
+}
+.hero-text button{
+  background-color: orange;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+.hero-img img{
+  height: 220px;
+}
+
+/* ------About Us section  */
+
+.about{
+     /* border: 2px solid black; */
+/* height: 400px; */
+  display: grid;
+  grid-template-columns: 320px auto;
+  column-gap: 8%;
+  padding: 30px;
+  
+}
+.about-img{
+   /* border: 2px solid black; */
+}
+.about-img img{
+  /* border: 2px solid black; */
+  height: 300px;
+  width: 300px;
+}
+.about-text{
+     /* border: 2px solid black; */
+}
+.about-text h1{
+  padding-top: 10px ;
+  padding-bottom: 20px;
+  text-align: center;
+
+}
+.about-text p{
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.5;
+}
