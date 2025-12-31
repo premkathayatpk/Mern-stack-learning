@@ -102,3 +102,73 @@ if("Hello"==sliceStr){
 else{
   console.log(`substring is not equal to "Hello"`)
 }
+
+// 11. Create a program that replaces every vowel in a string with an asterisk (*) using a loop. 
+let repStr=""
+for(let i=0;i<lowStr.length;i++){
+ let chr=lowStr[i]
+  if(chr=='a'||chr=='e'||chr=='i'||chr=='o'||chr=='u'){
+   repStr= lowStr.replaceAll(chr,'*')
+
+  }
+}
+console.log(repStr)
+
+// 12. Write a program that checks if a string contains the word `"Hello"` using `if-else` statements. If it does, replace it with `"Hi"`. 
+let repHiStr=""
+if(str.includes("Hello")){
+  repHiStr=str.replaceAll("Hello",'Hi')
+}
+console.log(repHiStr)
+
+// 13. Using a loop, write a program that counts the number of spaces in the string `"Hello EveryOne"`. 
+let countSpace=0
+for(let i=0;i<str.length;i++){
+  if(str[i]==" "){
+    countSpace++
+  }
+}
+console.log(countSpace)
+
+// 14. Write a program that checks if the length of a string is greater than 10. If it is, print the string in uppercase; otherwise, print it in lowercase. 
+if(str.length>10){
+  console.log(str.toUpperCase())
+}
+else{
+  console.log(str.toLowerCase())
+}
+
+// 15. Create a program that loops through a string and prints the index of each letter 'o' in the string `"Hello EveryOne"`. 
+for(let i=0;i<str.length;i++){
+  if(str[i]=='o'){
+    console.log(i)
+  }
+}
+
+// 16. Write a program that trims a string, then checks if its length is even or odd using `if-else` statements. 
+let trimStr=str.trim()
+if(trimStr.length%2==0){
+  console.log("length is even")
+}else{
+    console.log("length is Odd")
+
+}
+
+
+// 17. Using a loop, write a program that checks if the first and last characters of a string are the same. Use `if-else` statements to print the result. 
+let str17="evereone"
+if(str17[0]==str17[str17.length-1]){
+  console.log("first and last characters of a string are the same")
+}
+
+// 18. Write a program that replaces the first 3 characters of a string with "ABC" using slicing and `if-else` statements. 
+console.log(str.replace(str.slice(0,3),"ABC"))
+
+
+// 19. Create a program that uses a loop to reverse a string and print the reversed string. 
+let revstr=''
+for(let i=str.length-1;i>=0;i--){
+  // console.log(n[i])
+  revstr+=str[i]
+}
+console.log(revstr)
