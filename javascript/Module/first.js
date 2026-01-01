@@ -1,0 +1,6 @@
+const data=require("./second.js")
+// console.log(data)
+console.log(data.x)
+console.log(data.user)
+console.log(data.products)
+data.add()
