@@ -25,7 +25,6 @@
 
 // JSON=JavaScript Object Notation
 
-
 // const jData={
 //     "name":"pramod",
 //     "age":20
@@ -36,12 +35,51 @@
 //     age:20
 // }
 
-
 // console.log(user)
 
 // const jdata=JSON.stringify(user)
 // console.log(jdata)
 // console.log(JSON.parse(jdata))
 
-
 // user.json()  and JSON.parse(jdata)
+
+// client---API----Backend----DB
+//http://localhost:5173/products
+//http- protocol
+//localhost:5173 - domain name
+//products,user, - end point
+
+// http methods
+// Get(read),featch,delete,put/ (update)
+
+//data featch from api using promise---------------
+
+// let res=fetch('https://dummyjson.com/products', {
+//  method: "GET"
+// })
+
+// res.then((data)=>{
+//   return data.json()
+// }).then((data)=>{
+//  console.log(data.products)
+
+// })
+// .catch((err)=>{
+//   console.log(err)
+// })
+
+//data featch from api using async await-----------
+
+const getProduct = async () => {
+  try {
+    let res = await fetch("https://dummyjson.com/products", {
+      method: "GET",
+    });
+
+    res = await res.json();
+    console.log(res.products);
+  } catch (err) {
+    console.log(err);
+  }
+};
+getProduct();
