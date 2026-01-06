@@ -1,0 +1,16 @@
+.first {
+  border: 2px solid black;
+
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  padding: 5px;
+}
+
+button {
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+  margin-left: 40%;
+  margin-top: 5px;
+}
