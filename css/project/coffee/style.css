@@ -1,138 +1,132 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
-header{
+header {
   background-color: rgb(175, 59, 59);
   height: 40px;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px ;
+  padding: 10px 30px;
 }
 
-.logo{
+.logo {
   font-size: 20px;
-   align-items: center;
-   display: flex;
-   align-items: center;
-   
+  align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.logo img{
+.logo img {
   /* border: 2px solid white; */
   height: 40px;
 }
 
-.navigation ul{
+.navigation ul {
   display: flex;
   justify-content: space-between;
   column-gap: 20px;
 }
 
-.navigation li{
-list-style: none;
+.navigation li {
+  list-style: none;
 }
 
-.navigation a{
+.navigation a {
   text-decoration: none;
   color: white;
 }
 
 /* --------hero section--------- */
 
-.hero{
-   background-color: rgb(175, 59, 59);
-   padding: 20px 50px 20px 20px;
+.hero {
+  background-color: rgb(175, 59, 59);
+  padding: 20px 50px 20px 20px;
   height: 260px;
   display: flex;
   justify-content: space-between;
 }
 
-.hero-text{
+.hero-text {
   /* border: 2px solid black; */
   width: 290px;
   margin: 15px 40px;
   padding: 10px;
-
 }
-.hero-text h1{
+.hero-text h1 {
   color: orange;
 }
 
-.hero-text #t1{
-
-    /* border: 2px solid black; */
-    padding-top: 15px;
-    color: white;
-    font-size: 25px;
-    font-weight: 600;
-}
-.hero-text #t2{
+.hero-text #t1 {
+  /* border: 2px solid black; */
   padding-top: 15px;
-    /* border: 2px solid black; */
-    color: white;
-    font-size: 15px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
 }
-.hero-text .btn{
-    padding-top: 15px;
+.hero-text #t2 {
+  padding-top: 15px;
+  /* border: 2px solid black; */
+  color: white;
+  font-size: 15px;
 }
-.hero-text button{
+.hero-text .btn {
+  padding-top: 15px;
+}
+.hero-text button {
   background-color: orange;
   padding: 3px 8px;
   border-radius: 12px;
 }
 
-.hero-img img{
+.hero-img img {
   height: 220px;
 }
 
 /* ------About Us section  */
 
-.about{
-     /* border: 2px solid black; */
-/* height: 400px; */
+.about {
+  /* border: 2px solid black; */
+  /* height: 400px; */
   display: grid;
   grid-template-columns: 320px auto;
   column-gap: 8%;
   padding: 30px;
-  
 }
-.about-img{
-   /* border: 2px solid black; */
+.about-img {
+  /* border: 2px solid black; */
 }
-.about-img img{
+.about-img img {
   /* border: 2px solid black; */
   height: 300px;
   width: 300px;
 }
-.about-text{
-     /* border: 2px solid black; */
+.about-text {
+  /* border: 2px solid black; */
 }
-.about-text h1{
-  padding-top: 10px ;
+.about-text h1 {
+  padding-top: 10px;
   padding-bottom: 20px;
   text-align: center;
-
 }
-.about-text p{
+.about-text p {
   text-align: justify;
   font-size: 18px;
   line-height: 1.5;
 }
 
 /* ------Menu section------- */
-.menu{
+.menu {
   background-color: rgb(189, 74, 74);
   padding: 30px;
   text-align: center;
   color: white;
 }
 
-
-.items{
-    /* border: 2px solid black; */
+.items {
+  /* border: 2px solid black; */
 
   display: flex;
   justify-content: space-evenly;
@@ -141,7 +135,7 @@ list-style: none;
   padding-top: 20px;
 }
 
-.item{
+.item {
   /* border: 2px solid black; */
   /* height: 300px; */
   width: 400px;
@@ -149,20 +143,19 @@ list-style: none;
   color: white;
 }
 
-.item img{
+.item img {
   height: 120px;
-
 }
-.item-text p{
-  padding-top:15px;
+.item-text p {
+  padding-top: 15px;
 }
 
-.gallery{
-   padding: 30px;
+.gallery {
+  padding: 30px;
   text-align: center;
 }
 
-.gallery .photo{
+.gallery .photo {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -170,13 +163,38 @@ list-style: none;
   padding: 20px;
 }
 
-.photo .ph{
+.photo .ph {
   /* border: 1px solid black; */
   width: 400px;
-  
 }
 
-.photo img{
+.photo img {
   height: 180px;
   width: 180px;
+}
+
+/* -------contact section---------- */
+.contact {
+  padding: 20px;
+}
+.contact h1 {
+  margin-bottom: 15px;
+}
+.contact-text {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.contact-text i {
+  color: orange;
+}
+
+/* -------footer----------- */
+footer {
+  background-color: rgb(189, 74, 74);
+  text-align: center;
+  color: white;
+  padding: 20px;
 }
