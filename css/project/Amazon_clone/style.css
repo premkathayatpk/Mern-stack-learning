@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Amazon Ember", Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: rgb(224, 222, 222);
+}
+
+header {
+  background: linear-gradient(92.41deg, #003d32, #04734b);
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0px;
+  color: white;
+}
+.header-logo img {
+  height: 50px;
+  /* width: 80px; */
+}
+.region {
+  /* border: 1px solid rgb(222, 195, 195); */
+}
+.region .r1 {
+  font-size: 13px;
+}
+.region .r2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.search {
+  border: 2px solid rgb(192, 10, 122);
+  width: 60%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  column-gap: 0px;
+}
+.search-all {
+  /* border: 5px solid rgb(213, 9, 9); */
+  height: 100%;
+  display: flex;
+  color: black;
+}
+#search-select {
+  /* border: 5px solid rgb(213, 9, 9); */
+
+  height: 100%;
+  width: 100%;
+
+  /* width: ; */
+  background-color: rgb(207, 203, 203);
+}
+.search input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.search-logo {
+  height: 100%;
+  font-size: 25px;
+  /* font-weight: 10; */
+  background-color: rgb(149, 53, 96);
+  text-align: center;
+  padding-top: 5px;
+}
+
+.account {
+  text-align: center;
+  font-size: 18px;
+}
+.cart {
+  font-size: 18px;
+}
+
+/* -----------Navbar--------------- */
+nav {
+  /* border: 1px solid red; */
+  height: 25px;
+  background-color: #085749;
+  padding: 10px;
+}
+nav ul {
+  display: flex;
+  /* justify-content: space-around; */
+  column-gap: 18px;
+  color: white;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+.my-box {
+  width: 400px;
+  height: 200px;
+}
