@@ -102,3 +102,62 @@ nav a {
   width: 400px;
   height: 200px;
 }
+
+/* ---------hero------------ */
+
+.banner {
+  /* border: 1px solid black; */
+  position: relative;
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.card-layout {
+  mask-image: linear-gradient(black);
+  margin-top: -350px; /* adjust if needed */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 20px;
+}
+
+.item-container {
+  /* border: 2px solid black; */
+  background-color: white;
+
+  height: 380px;
+  width: 350px;
+  padding: 20px 0px 12px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.item {
+  /* border: 2px solid black; */
+  height: 150px;
+  width: 150px;
+  padding: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+}
+.item img {
+  height: 110px;
+  width: 150px;
+}
+.item p {
+  font-size: 12px;
+}
+.item-container a {
+  text-decoration: none;
+  font-size: 13px;
+  color: 2162A1;
+}
