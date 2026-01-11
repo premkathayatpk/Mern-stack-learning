@@ -161,3 +161,32 @@ nav a {
   font-size: 13px;
   color: 2162A1;
 }
+footer button{
+  width: 100%;
+  padding: 10px;
+  background-color: #3f4f4c;
+  color: white;
+  font-size: medium;
+}
+.footer_bar
+{
+  background-color: rgb(37, 36, 36);
+  padding: 25px;
+  color: white;
+}
+footer ul{
+  margin: 15px 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  
+}
+footer ul li{
+  /* border: 2px solid black; */
+  width: 120px;
+}
+footer .f_p{
+  font-size: small;
+}
