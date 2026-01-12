@@ -1,0 +1,44 @@
+.box
+{
+  margin-top: 30px;
+  border-radius: 15px;
+  border: 2px solid rgb(225, 220, 220);
+  /* background-color: yellow; */
+  height: 410px;
+  width: 280px;
+ 
+}
+.box img{
+  height: 200px;
+  width: 100%;
+ border-radius: 15px 15px 0 0;
+}
+.card_text{
+  padding: 15px;
+}
+.c_s{
+  padding-top: 10px;
+  font-size: 15px;
+}
+.price{
+  padding: 10px;
+  border-top: 2px solid rgb(225, 220, 220) ;
+
+}
+.price button{
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  font-weight: 600;
+  color: blue;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+.price del{
+  color: rgb(166, 166, 166);
+  font-weight: 800;
+}
+.price .discount{
+  color: rgb(255, 128, 2);
+  font-weight: 800;
+}

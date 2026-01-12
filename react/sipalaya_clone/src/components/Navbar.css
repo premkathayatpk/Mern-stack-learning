@@ -1,0 +1,47 @@
+.nav{
+  padding: 20px 200px 20px 120px;
+background-color: transparent;
+    background-image: linear-gradient(115deg, #442F90 0%, #220F68 100%);  height: 600px;
+}
+
+.logo img{
+  /* height: 100px; */
+  width:110px;
+}
+.nav_items ul{
+  margin-top: 30px;
+  display: flex;
+  justify-content:space-between ;
+  list-style: none;
+  color: white;
+  font-size: large;
+}
+.nav_items ul li:hover{
+  text-decoration: underline;
+}
+.banner
+{
+  padding-top: 45px;
+  display: grid;
+  grid-template-columns: 55% 40%;
+  column-gap:120px ;
+  color: white;
+}
+.nav_img img{
+  height: 500px ;
+}
+.title{
+  font-size: 80px;
+  font-weight: 700;
+}
+.nav_text button{
+  padding: 15px;
+  background-color: #331f7a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 30px;
+}
+.nav_text .n_dis{
+  margin-top: 30px;
+}

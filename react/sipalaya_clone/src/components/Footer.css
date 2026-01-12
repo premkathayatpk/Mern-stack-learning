@@ -1,0 +1,38 @@
+.footer{
+  background-color: rgb(238, 236, 236);
+  margin-top: 50px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+
+}
+.fl{
+  width: 250px;
+
+}
+
+.footer ul li{
+  list-style: none;
+  margin-top: 10px;
+}
+
+.about_sip img{
+height: 50px;
+}
+.payment img{
+  height: 70px;
+}
+
+.bottom_footer{
+/* border: 2px solid black; */
+background-color: rgb(19, 19, 145);
+color: white;
+text-align: center;
+padding: 20px;
+}
+.social_link i{
+  font-size: 25px;
+padding: 10px;
+}
