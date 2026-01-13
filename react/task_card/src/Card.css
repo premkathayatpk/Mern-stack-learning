@@ -1,0 +1,38 @@
+.parent {
+  text-align: center;
+}
+h1 {
+  margin: 50px;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-evenly;
+}
+.box {
+  /* border: 2px solid black; */
+  width: 350px;
+  text-align: center;
+}
+.box img {
+  height: 150px;
+}
+.image {
+  background-color: rgb(236, 228, 228);
+  /* height: 200px; */
+  /* width: 300px; */
+  padding: 70px 0;
+}
+.name {
+  background-color: rgb(203, 163, 163);
+  font-size: large;
+  font-weight: 550;
+  width: 100px;
+  padding: 5px;
+  margin: -15px 0 0 35%;
+}
+.price {
+  font-size: large;
+  font-weight: 550;
+}
