@@ -1,0 +1,17 @@
+.nav
+{
+  background-color: black;
+  color: white;
+  display: grid;
+  padding: 8px 8px 8px 35px ;
+  align-items: center;
+  grid-template-columns: 30% 60%;
+  
+  justify-content: space-between;
+}
+.nav_item ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  column-gap: 20px;
+}

@@ -1,0 +1,31 @@
+.counter{
+  background-color: rgb(105, 209, 224);
+  text-align: center;
+  align-items: center;
+  margin: 150px 35%;
+  padding: 50px;
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+}
+button{
+  padding:8px 12px;
+
+  border-radius: 10px;
+}
+.inc_btn{
+  background-color: rgb(84, 255, 84);
+}
+.dec_btn{
+  background-color: red;
+}
+.reset_btn{
+  background-color: rgb(34, 34, 242);
+}
+input{
+  padding: 8px;
+  border: 2px solid gray;
+}
+.set_btn{
+  background-color: gray;
+}
