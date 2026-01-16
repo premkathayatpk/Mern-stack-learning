@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.app{
+  background-color: rgb(59, 13, 223);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  
+}

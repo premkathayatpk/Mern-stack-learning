@@ -1,0 +1,58 @@
+.parent {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  width: 650px;
+}
+table{
+  width: 100%;
+  margin: 10px 0;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse; 
+  padding: 8px;
+  text-align: left; 
+  
+}
+.top_form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#full_name{
+  width: 350px;
+}
+#birth{
+  width: 150px;
+}
+input{
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+label{
+  margin: 5px 0;
+}
+.g
+{
+  width: 150px;
+}
+
+.bottom_form{
+  display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+h1{
+  color: darkblue;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+h3{
+  color: darkblue;
+}
