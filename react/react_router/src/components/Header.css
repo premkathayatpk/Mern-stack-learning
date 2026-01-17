@@ -1,0 +1,10 @@
+.parent{
+  background-color: black;
+display: flex;
+justify-content: space-around;
+padding: 10px;
+}
+.nav{
+  color: white;
+  text-decoration: none;
+}
