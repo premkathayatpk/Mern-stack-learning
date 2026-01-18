@@ -1,0 +1,59 @@
+.todoList {
+  border-radius: 10px;
+  padding: 10px;
+  width: 500px;
+  background-color: blue;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+#todoInput {
+  padding: 5px;
+  width: 80%;
+  margin-right: 0;
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 500;
+}
+#btn {
+  padding: 5px;
+  width: 15%;
+  margin-left: 0;
+  background-color: rgb(5, 154, 5);
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 600;
+  color: white;
+}
+.todo-item {
+  padding: 10px 10px;
+  list-style-type: decimal;
+  list-style-position: inside;
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  overflow: hidden;
+  background-color: #179425;
+  margin: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+}
+.todo-item:hover {
+  background-color: #03632b;
+  cursor: pointer;
+}
+.items {
+  padding-left: 0;
+  margin-left: 0;
+}
+.delBtn{
+  margin-left: auto;
+  background: #ff4d4d; border: none; border-radius: 5px; color: white; font-size: 18px; padding: 5px 10px; cursor: pointer;
+}
