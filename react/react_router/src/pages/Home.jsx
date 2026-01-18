@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom"
 
-const navigate=useNavigate()
+
 const Home = () => {
+  const navigate=useNavigate()
   return (
     <div>
       Home

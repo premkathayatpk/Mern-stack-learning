@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/contact";
@@ -6,6 +7,7 @@ import Product from "./pages/Product";
 import Login from "./pages/Login";
 import Header from "./components/Header";
 import PageNotFound from "./pages/PageNotFound";
+import Register from "./pages/Register";
 
 const App = () => {
   return (
@@ -18,6 +20,7 @@ const App = () => {
         <Route path="/product" element={<Product />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="*" element={<PageNotFound/>}></Route>
+        <Route path="/register" element={<Register/>}></Route>
       </Routes>
     </div>
   );
