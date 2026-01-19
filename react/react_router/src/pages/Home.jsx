@@ -3,6 +3,11 @@ import { useNavigate } from "react-router-dom"
 
 const Home = () => {
   const navigate=useNavigate()
+
+  const user={
+    name:"Ram",
+    age:22,
+  }
   return (
     <div>
       Home
@@ -10,7 +15,7 @@ const Home = () => {
       <div>
         <button
         onClick={()=>{
-          navigate("/product")
+          navigate("/product",{state:user})
         }}
         >
           Go to Product
