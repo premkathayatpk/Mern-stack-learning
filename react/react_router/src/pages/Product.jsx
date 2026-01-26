@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Product = () => {
   const [product, setProduct] = useState([]);
@@ -19,6 +20,7 @@ const Product = () => {
 
   return (
     <div>
+      
       {
         product.length>0?
         <div className="flex p-10 flex-wrap gap-5 justify-center bg-gray-400">
@@ -29,6 +31,7 @@ const Product = () => {
                 <h1>{item.title}</h1>
                 <h1>Rs.{item.price}</h1>
                 <h1>{item.rating}</h1>
+                <Link to={`/productDetail/${item.id}`} className="text-blue-600">See more...</Link>
                 </div>
 
             })
