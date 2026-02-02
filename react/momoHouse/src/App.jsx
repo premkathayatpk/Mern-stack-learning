@@ -5,7 +5,7 @@ import Footer from "./components/comon/Footer";
 const App = () => {
   return (
     <div className="bg-gray-100">
-      <div className="fixed top-0 left-0 w-full">
+      <div className=" top-0 left-0 w-full">
         <Header />
       </div>
 

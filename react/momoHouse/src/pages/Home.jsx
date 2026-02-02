@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Hero from "../components/home/Hero";
+import FilterCmp from "../components/home/FilterCmp";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <main>
+      <Hero />
+      <FilterCmp />
+    </main>
+  );
+};
 
-export default Home
+export default Home;
