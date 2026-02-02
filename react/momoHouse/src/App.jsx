@@ -1,12 +1,15 @@
-import Header from "./components/Header";
-import AppRoutes from "./components/AppRoutes";
-import Footer from "./components/Footer";
+import Header from "./components/comon/Header";
+import AppRoutes from "./components/comon/AppRoutes";
 
+import Footer from "./components/comon/Footer";
 const App = () => {
   return (
     <div className="bg-gray-100">
-      <Header />
-      <div className="min-h-140">
+      <div className="fixed top-0 left-0 w-full">
+        <Header />
+      </div>
+
+      <div className="min-h-140 ">
         <AppRoutes />
       </div>
 

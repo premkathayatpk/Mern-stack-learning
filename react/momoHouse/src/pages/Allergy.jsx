@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Allergy = () => {
-  return (
-    <div>Allergy</div>
-  )
-}
+  return <div className="mt-30">Allergy</div>;
+};
 
-export default Allergy
+export default Allergy;
