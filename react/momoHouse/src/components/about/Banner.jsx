@@ -1,28 +1,59 @@
-import { MdOutlineSlowMotionVideo } from "react-icons/md";
+import { useRef, useState } from "react";
+import banner_video from "../../assets/banner_video.mp4";
+import { MdOutlineSlowMotionVideo, MdPauseCircleOutline } from "react-icons/md";
 
 const Banner = () => {
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false); // ⬅ paused by default
+
+  const handleVideoToggle = () => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    if (video.paused) {
+      video.play();
+      setIsPlaying(true);
+    } else {
+      video.pause();
+      setIsPlaying(false);
+    }
+  };
+
   return (
-    <section>
-      <div
-        className="w-full h-150 bg-cover bg-center  flex flex-col justify-end pb-15 "
-        style={{
-          backgroundImage: `url("https://cdn.pixabay.com/photo/2024/10/19/12/21/vegetables-9132660_1280.jpg")`,
-        }}
+    <section className="relative w-full h-152 overflow-hidden">
+      {/* Background Video */}
+      <video
+        ref={videoRef}
+        loop
+        muted
+        playsInline
+        preload="auto"
+        className="absolute inset-0 w-full h-full object-cover"
       >
-        <div className="text-white px-20 py-4 bg-linear-to-r from-black/90 to-transparent">
-          <div>
-            <h1 className="text-4xl font-medium">Process behind the making</h1>
-            <p className="my-2 text-xl">
-              See how we make momos that you like from only the best ingredients
-            </p>
-          </div>
-          <button className=" bg-green-700  rounded-2xl p-2 flex w-45 items-center gap-x-1">
-            <p className="bg-white rounded-full">
-              <MdOutlineSlowMotionVideo size="25px" className="text-gray-700" />
-            </p>
-            Watch the Video
-          </button>
-        </div>
+        <source src={banner_video} type="video/mp4" />
+      </video>
+
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-transparent"></div>
+
+      {/* Content */}
+      <div className="relative z-10 mt-70 ml-30 flex flex-col gap-4 text-white p-10 w-209.25">
+        <h1 className="text-[49px] font-bold">Process behind the making</h1>
+        <p className="text-[20px]">
+          See how we make momos that you like from only the best ingredients
+        </p>
+
+        <button
+          onClick={handleVideoToggle}
+          className="bg-[#0C6967] w-55 text-[16px] text-white px-8 py-4 rounded-3xl flex items-center gap-x-2"
+        >
+          {isPlaying ? (
+            <MdPauseCircleOutline size={26} />
+          ) : (
+            <MdOutlineSlowMotionVideo size={26} />
+          )}
+          {isPlaying ? "Pause Video" : "Watch the Video"}
+        </button>
       </div>
     </section>
   );
