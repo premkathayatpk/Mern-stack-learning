@@ -29,10 +29,10 @@ const Party = () => {
             <img className="w-30 h-30 " src={qr2} alt="" />
           </div>
         </div>
-        <img className="w-[552px] h-[448px] rounded-2xl " src={party} alt="" />
+        <img className="w-138 h-112 rounded-2xl " src={party} alt="" />
       </div>
       <div className="flex justify-around">
-        <img className="w-[552px] h-[448px] rounded-2xl " src={party} alt="" />
+        <img className="w-138 h-112 rounded-2xl " src={party} alt="" />
         <div className="w-114 space-y-7 ">
           <div className="space-y-5 ">
             <PiChefHat className="text-[#D95103] text-[56px] " />

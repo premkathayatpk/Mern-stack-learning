@@ -2,14 +2,14 @@ import chef2 from "../../assets/chef2.png";
 
 const Hero = () => {
   return (
-    <section className=" flex gap-30  h-190.75 pt-10 ">
-      <div className="w-180 ">
+    <section className=" flex gap-30  h-190.75  ">
+      <div className="w-180 mt-20 ">
         <h1 className=" text-[#0C6967]  ml-39 h-19.25  font-Allura text-[64px] ">
           Allergy Advices
         </h1>
-        <div className=" h-46.25  ml-39 mt-20  ">
+        <div className=" h-46.25  ml-39 mt-15 space-y-5  ">
           <p className="text-[24px] text-[#6B788E] ">AT OUR RESTAURANT</p>
-          <p className="text-[30px] font-bold text-[#101828] ">
+          <p className="text-[30px] font-bold text-[#101828] leading-10 ">
             We use only the freshest and highest quality ingredients in all our
             dishes,{" "}
             <span className="text-[#D95103] ">
