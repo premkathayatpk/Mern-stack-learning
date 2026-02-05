@@ -1,13 +1,16 @@
 import { useLocation } from "react-router-dom";
 import { TiMinus } from "react-icons/ti";
 import { TiPlus } from "react-icons/ti";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CartContext } from "../context/CartProvider";
 function ProductDetail() {
   const { state } = useLocation();
   const [counter, setCounter] = useState(1);
 
   const { ingredients, instructions, mealType, tags } = state;
-  console.log(state);
+  const { dispatch } = useContext(CartContext);
+
+  // console.log(state);
   return (
     <main className="my-10">
       <section className="  w-[90vw] mt-10  pl-8 m-auto   flex gap-5 p-5 bg-white">
@@ -49,7 +52,12 @@ function ProductDetail() {
             <button className="bg-[#2abbe8]  p-3 w-48 text-white rounded-sm ">
               Buy Now
             </button>
-            <button className="bg-amber-600 p-3 w-48 text-white rounded-sm ">
+            <button
+              onClick={() => {
+                dispatch({ type: "addToCart", payload: state });
+              }}
+              className="bg-amber-600 p-3 w-48 text-white rounded-sm "
+            >
               Add To Cart
             </button>
           </div>

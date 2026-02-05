@@ -10,6 +10,7 @@ import Contact from "../../pages/Contact";
 import Menu from "../../pages/Menu";
 import PageNotFound from "./PageNotFound";
 import ProductDetail from "../../pages/ProductDetail";
+import CartPage from "../../pages/CartPage";
 
 const AppRoutes = () => {
   return (
@@ -25,6 +26,7 @@ const AppRoutes = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/productDetail" element={<ProductDetail />} />
+        <Route path="/cartPage" element={<CartPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
