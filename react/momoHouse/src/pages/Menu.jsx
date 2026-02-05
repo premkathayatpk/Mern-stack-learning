@@ -2,9 +2,11 @@ import useFetch from "../hooks/useFetch";
 import qr from "../assets/qr.png";
 import { FaMobileScreenButton } from "react-icons/fa6";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Menu() {
   const { isError, isLoading, products } = useFetch();
+  const navigate = useNavigate();
 
   const [italian, setItalian] = useState([]);
   const [pakistan, setPakistani] = useState([]);
@@ -15,7 +17,7 @@ function Menu() {
       setPakistani(products.filter((item) => item.cuisine === "Pakistani"));
     }
   }, [products]);
-  console.log(products);
+  // console.log(products);
 
   if (!isError && isLoading) {
     return (
@@ -67,6 +69,9 @@ function Menu() {
             {italian?.map((item) => {
               return (
                 <div
+                  onClick={() => {
+                    navigate("/productDetail", { state: item });
+                  }}
                   key={item.id}
                   className="w-82    shadow-xl  bg-white shadow-gray-200   rounded-2xl flex flex-col"
                 >

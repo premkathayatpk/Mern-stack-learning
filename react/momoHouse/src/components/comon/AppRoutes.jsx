@@ -9,6 +9,7 @@ import { Register } from "../../pages/Register";
 import Contact from "../../pages/Contact";
 import Menu from "../../pages/Menu";
 import PageNotFound from "./PageNotFound";
+import ProductDetail from "../../pages/ProductDetail";
 
 const AppRoutes = () => {
   return (
@@ -23,6 +24,7 @@ const AppRoutes = () => {
         <Route path="/allergy" element={<Allergy />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/productDetail" element={<ProductDetail />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
