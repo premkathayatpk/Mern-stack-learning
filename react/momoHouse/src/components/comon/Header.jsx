@@ -1,26 +1,35 @@
 import { NavLink } from "react-router-dom";
 import momologo from "../../assets/momologo.png";
-
+import { FaCartPlus } from "react-icons/fa";
 import { IoLogoFacebook } from "react-icons/io5";
 import { FaTiktok } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaUserCircle } from "react-icons/fa";
-import { FaCartArrowDown } from "react-icons/fa6";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartProvider";
 
 function Header() {
+  const { state } = useContext(CartContext);
+  const { cartItems } = state;
+
+  const totalItem = cartItems.reduce((acc, item) => {
+    return acc + item.qty;
+  }, 0);
+
   return (
-    <nav className="relative bg-white border-b-4 border-gray-200  flex  justify-around p-5   items-center  ">
+    <nav className="  border-b border-b-gray-300  bg-white flex  justify-around p-5   items-center  ">
       <NavLink to="/" className="flex items-center  gap-x-3 ">
-        <img className="h-12" src={momologo} alt="momo_logo" />
+        <img src={momologo} alt="momo_logo" />
         <h1 className="text-[#0C6967] font-bold text-2xl  ">momos</h1>
       </NavLink>
-      <div className="space-x-8 flex items-center">
+      <div className="space-x-8   flex items-center ">
         <NavLink to="/about">About Us</NavLink>
         <NavLink to="/menu">Our Menu</NavLink>
         <NavLink to="/services">Our Services </NavLink>
         <NavLink to="/allergy">Allergy Advice </NavLink>
-        <NavLink to="/cartPage">
-          <FaCartArrowDown size={25} color="red" />
+        <NavLink to="/CartPage"  className=' relative '  >
+          <p  className="absolute bottom-4 left-4 flex justify-center items-center text-sm bg-black rounded-full text-white w-6 h-6" >{totalItem}</p>
+          <FaCartPlus size={25} color="red" />
         </NavLink>
       </div>
       <div className="flex items-center   gap-x-7 ">
@@ -40,9 +49,10 @@ function Header() {
           Contact
         </NavLink>
       </div>
-      <div className="group relative">
+
+      <div className="  group relative  ">
         <FaUserCircle size={35} color="green" />
-        <div className="hidden group-hover:flex flex-col font-bold gap-y-2 bg-gray-400 p-5 rounded-2xl absolute ">
+        <div className=" group-hover:flex font-bold  gap-y-2 bg-gray-400 rounded-sm  flex-col p-5   z-50  absolute   hidden  ">
           <NavLink to="/profile" className="hover:underline">
             Profile
           </NavLink>

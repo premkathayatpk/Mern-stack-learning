@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { CgArrowRight } from "react-icons/cg";
 import useFetch from "../../hooks/useFetch";
 
 function FilterComp() {
   const { isError, isLoading, products } = useFetch();
+  const navigate = useNavigate();
 
   // console.log(products);
 
@@ -67,6 +68,9 @@ function FilterComp() {
                 {filter?.map((item) => {
                   return (
                     <div
+                      onClick={() => {
+                        navigate("/productDetail", { state: item });
+                      }}
                       key={item.id}
                       className="w-55 shadow-xl shadow-gray-200   rounded-2xl flex flex-col  "
                     >
