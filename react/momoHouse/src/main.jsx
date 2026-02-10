@@ -8,21 +8,20 @@ import { ToastContainer, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <BrowserRouter>
+  <BrowserRouter>
+    <CartProvider>
       <ToastContainer
         position="top-right"
         autoClose={1000}
         hideProgressBar={false}
-        closeOnClick={false}
-        pauseOnHover={true}
-        draggable={true}
+        closeOnClick
+        pauseOnHover
+        draggable
         theme="light"
         transition={Bounce}
       />
-      <CartProvider>
-        <App />
-      </CartProvider>
-    </BrowserRouter>
-  </StrictMode>,
+
+      <App />
+    </CartProvider>
+  </BrowserRouter>,
 );

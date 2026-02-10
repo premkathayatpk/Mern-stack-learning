@@ -12,6 +12,8 @@ import PageNotFound from "./PageNotFound";
 import ProductDetail from "../../pages/ProductDetail";
 import CartPage from "../../pages/CartPage";
 import Payment from "../../pages/Payment";
+import Success from "../../pages/Success";
+import Fail from "../../pages/Fail";
 
 const AppRoutes = () => {
   return (
@@ -29,6 +31,8 @@ const AppRoutes = () => {
         <Route path="/productDetail" element={<ProductDetail />} />
         <Route path="/cartPage" element={<CartPage />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/success" element={<Success />} />
+        <Route path="/fail" element={<Fail />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>

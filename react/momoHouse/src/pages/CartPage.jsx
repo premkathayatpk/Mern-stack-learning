@@ -105,7 +105,7 @@ function CartPage() {
             <div>
               <button
                 onClick={() => {
-                  navigate("/payment");
+                  navigate("/payment", { state: shippingFee + totalPrice });
                 }}
                 className="bg-orange-500 text-white w-full p-3"
               >
