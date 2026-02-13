@@ -3,6 +3,7 @@ import AppRoutes from "./components/comon/AppRoutes";
 
 import Footer from "./components/comon/Footer";
 const App = () => {
+  
   return (
     <div className="bg-gray-100">
       <div className=" top-0 left-0 w-full">

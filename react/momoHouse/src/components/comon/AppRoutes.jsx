@@ -5,7 +5,7 @@ import Services from "../../pages/Services";
 import Profile from "../../pages/Profile";
 import Allergy from "../../pages/Allergy";
 import Login from "../../pages/Login";
-import { Register } from "../../pages/Register";
+// import { Register } from "../../pages/Register";
 import Contact from "../../pages/Contact";
 import Menu from "../../pages/Menu";
 import PageNotFound from "./PageNotFound";
@@ -14,6 +14,7 @@ import CartPage from "../../pages/CartPage";
 import Payment from "../../pages/Payment";
 import Success from "../../pages/Success";
 import Fail from "../../pages/Fail";
+import Register from "../../pages/Register";
 
 const AppRoutes = () => {
   return (
