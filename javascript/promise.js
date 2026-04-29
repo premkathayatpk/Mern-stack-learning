@@ -36,3 +36,32 @@
 // }
 
 // console.log(user)
+
+// SetTimeout promise
+
+const myPromise = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("hello");
+  }, 1000);
+});
+myPromise.then((data) => {
+  console.log(data);
+});
+
+// Check even odd num using promise
+
+const evenOddPromise = new Promise((resolve, reject) => {
+  let num = 5;
+  if (num % 2 == 0) {
+    resolve("Even");
+  } else {
+    reject("odd");
+  }
+});
+evenOddPromise
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });

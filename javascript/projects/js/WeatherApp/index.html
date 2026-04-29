@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <input id="inputField" type="text" placeholder="Enter City name" />
+      <button class="searchBtn">Search</button>
+
+      <div class="show">
+        <h1 class="city"></h1>
+        <div class="w-head">
+          <h1 class="temp"></h1>
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-1024.png"
+            alt=""
+            style="height: 60px"
+          />
+        </div>
+
+        <div class="detail">
+          <ul>
+            <li><span>Feel like</span><span id="feel"></span></li>
+            <li><span>Wind speed</span><span id="w-speed"></span></li>
+            <li><span>Humidity</span><span id="humidity"></span></li>
+            <li><span>Clouds</span><span></span><span id="clouds"></span></li>
+            <li>
+              <span>Pressure</span><span></span> <span id="pressure"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

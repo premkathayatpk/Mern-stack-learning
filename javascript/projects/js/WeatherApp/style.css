@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background: rgb(234, 171, 171);
+  padding: 20px;
+  margin: 20px auto;
+  width: 500px;
+  border-radius: 20px;
+  box-shadow: rgb(99, 148, 99) 0 8px 15px 0;
+}
+.container h1 {
+  text-align: center;
+  margin: 10px 0;
+  color: darkgreen;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#inputField {
+  margin: auto;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+}
+.searchBtn {
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.searchBtn:hover {
+  background: greenyellow;
+  color: green;
+}
+.show {
+  background: rgb(84, 220, 241);
+  padding: 10px 30px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: gray 0 10px 10px 0;
+}
+.w-head {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 15px;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-size: 20px;
+  font-weight: 550;
+}
