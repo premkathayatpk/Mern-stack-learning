@@ -1,12 +1,12 @@
-import React from 'react'
-import Forms from './Forms'
+import React from "react";
+import Form from "./Form";
 
 const App = () => {
   return (
     <div>
-      <Forms/>
+      <Form />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
